@@ -21,3 +21,41 @@ body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: #3e4c62;
+    background-image: url("../img/header-background.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    text-align: center;
+}
+
+.header h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 12rem;
+    font-size: 9rem;
+    letter-spacing: 0.5rem;
+}
+
+.header a {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    margin-top: 4rem;
+    background-color: #b64b4b;
+    padding: 1rem 1.4rem;
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    box-shadow: .2rem .4rem .2rem #892e2b;
+}
+
+.header a:hover {
+    color: #b64b4b;
+    background-color: #65b1be;
+    box-shadow: .2rem .4rem .2rem #477b6a;
+}
