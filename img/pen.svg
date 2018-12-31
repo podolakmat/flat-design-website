@@ -1,0 +1,22 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" y="-512" x="-779" width="267" stroke-miterlimit="10" stroke="#231F20" height="267" fill="#FFFFFF"/>
+  <rect id="svg_2" y="-244" x="-779" width="267" stroke-miterlimit="10" stroke="#231F20" height="267" fill="#FBD50A"/>
+  <rect id="svg_3" y="23" x="-779" width="267" stroke-miterlimit="10" stroke="#231F20" height="267" fill="#C61934"/>
+  <rect id="svg_4" y="290" x="-779" width="267" stroke-miterlimit="10" stroke="#231F20" height="267" fill="#96212C"/>
+  <rect id="svg_5" y="557" x="-779" width="267" stroke-miterlimit="10" stroke="#231F20" height="267" fill="#202C3C"/>
+  <rect id="svg_6" y="825" x="-779" width="267" stroke-miterlimit="10" stroke="#231F20" height="267" fill="#ED1C24"/>
+  <ellipse id="svg_7" ry="252.774" rx="254.776" fill="#76c2af" cy="255.649" cx="259.457913"/>
+  <path id="svg_8" fill="#4f5d73" d="m370.826,325.939l5.664,5.664l8.497,-8.497l36.1,21.852l-85.49,85.49l-21.852,-36.1l9.164,-9.164l-5.664,-5.664l53.581,-53.581zm-193.681,-158.823l128.471,128.471c6.179,-1.393 12.906,0.27 17.716,5.08c7.46,7.46 7.46,19.555 0,27.015c-7.46,7.46 -19.555,7.46 -27.015,0c-4.628,-4.628 -6.373,-11.04 -5.258,-17.023l-128.729,-128.728l51.852,178.212l91.938,5.665l13.943,13.943l50.98,-50.98l-14.815,-14.815l-4.793,-91.938l-174.29,-54.902z"/>
+  <path id="svg_9" fill="#DBDBDB" d="m182.928,161.333l128.471,128.471c6.179,-1.393 12.906,0.27 17.716,5.08c7.46,7.46 7.46,19.555 0,27.015c-7.46,7.46 -19.555,7.46 -27.015,0c-4.628,-4.628 -6.373,-11.04 -5.258,-17.023l-128.729,-128.728l51.852,178.212l91.938,5.665l13.943,13.943l50.98,-50.98l-14.815,-14.815l-4.793,-91.938l-174.29,-54.902z"/>
+  <path id="svg_10" stroke-width="20" stroke-miterlimit="10" stroke="#ffffff" fill="none" d="m353.372,100.932c-82.637,-57.314 -196.089,-36.786 -253.403,45.85s-36.786,196.089 45.85,253.403"/>
+  <rect id="svg_11" y="383.675" x="129.309" width="33.021" height="33.021" fill="#4f5d73"/>
+  <rect id="svg_12" y="87.333" x="343.805" width="33.021" height="33.021" fill="#4f5d73"/>
+ </g>
+</svg>
