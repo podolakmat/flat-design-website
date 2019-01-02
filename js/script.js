@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var n = '#nav__wrapper--list',
         no = 'nav__open';
-    $('.nav__wrapper--hamburger').click(function() {
+    $('.nav__wrapper--hamburger, #nav__wrapper--list a').click(function() {
         if ($(n).hasClass(no)) {
 
             $(n).animate({
@@ -9,7 +9,7 @@ $(document).ready(function() {
             }, 300);
             setTimeout(function() {
                 $(n).removeClass(no).removeAttr('style');
-            }, 320);
+            }, 1);
         } else {
             var newH = $(n).css('height', 'auto').height();
             $(n).height(0).animate({
