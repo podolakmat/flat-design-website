@@ -32,6 +32,13 @@ $(document).ready(function() {
         else nav.removeClass('sticky');
     });
 
-
+    $('.testimonials__wrapper').slick({
+        slidesToShow: 1,
+        autoplay: true,
+        mobileFirst: true,
+        swipe: true,
+        arrows: false,
+        autoplaySpeed: 3000,
+    });
 
 });
