@@ -170,7 +170,8 @@ body {
     }
 }
 
-.about {
+.about,
+.contact {
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -698,4 +699,126 @@ body {
         text-align: center;
         width: 50%;
     }
+}
+
+.contact h1 {
+    color: #eb820d;
+}
+
+.form {
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    margin: 6rem auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form__field--input {
+    width: 49%;
+}
+
+.form__field--textarea {
+    width: 100%;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    height: 5rem;
+    border: none;
+}
+
+textarea {
+    width: 100%;
+    height: 24rem;
+    border: none;
+    margin: 2rem 0 2rem 0;
+    resize: none;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #404040;
+    text-indent: 1rem;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    outline: none;
+    border: 3px solid #eb820d;
+}
+
+textarea {
+    padding-top: 1rem;
+}
+
+.contact__submit-btn {
+    width: 100%;
+    height: 6rem;
+    background-color: #b64b4b;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    margin-bottom: 7rem;
+    box-shadow: 0 0.3rem #5b212a;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    line-height: 6rem;
+}
+
+.contact__submit-btn:hover {
+    background-color: #65b1be;
+}
+
+.contact iframe {
+    width: 100%;
+    height: 35rem;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #b64b4b;
+}
+
+.footer__social {
+    max-width: 30rem;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    margin: 3.6rem auto 5rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social li {
+    font-size: 5rem;
+    text-decoration: none;
+    list-style: none;
+    color: #d08b4d;
+    cursor: pointer;
+}
+
+.footer__social li a {
+    color: #d08b4d;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 300;
+    color: #bbbbbb;
+    margin-bottom: 6rem;
 }
