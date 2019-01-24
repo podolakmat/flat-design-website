@@ -42,8 +42,8 @@ $(document).ready(function() {
     });
 
     var activeLink = $('.nav__active');
-    var scrollLink = $('.nav__scroll');
-    var scrollLinkHeader = $('.nav__scroll--header');
+    var scrollLink = $('.scroll__link');
+    var scrollLinkHeader = $('.scroll__link--header');
 
     scrollLink.click(function(e) {
         e.preventDefault();

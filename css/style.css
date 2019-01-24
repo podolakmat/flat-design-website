@@ -833,6 +833,11 @@ textarea {
     color: #d08b4d;
 }
 
+.footer__social li:hover,
+.footer__social li a:hover {
+    color: #65b1be;
+}
+
 .footer p {
     text-align: center;
     font-size: 1.4rem;
