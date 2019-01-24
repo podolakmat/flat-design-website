@@ -68,10 +68,8 @@ body {
     box-shadow: .2rem .4rem .2rem #477b6a;
 }
 
-#portfolio:target,
-#services:target,
-#contact:target {
-    padding-top: 6rem;
+.active {
+    background-color: #b64b4b;
 }
 
 .nav {
@@ -87,7 +85,7 @@ body {
     width: 95%;
     max-width: 100rem;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .nav__wrapper--logo img {
