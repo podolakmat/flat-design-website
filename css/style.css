@@ -136,6 +136,8 @@ body {
 
 .nav__wrapper--hamburger {
     color: #3f5977;
+    background-color: transparent;
+    border: none;
     float: right;
     font-size: 3rem;
     font-weight: bold;
@@ -164,6 +166,7 @@ body {
 
     .nav__open {
         height: auto;
+        margin-bottom: 1rem;
     }
 
     .nav__wrapper--list li {
@@ -278,6 +281,7 @@ body {
     font-size: 2rem;
     font-weight: 400;
     line-height: 2.4rem;
+    text-transform: uppercase;
 }
 
 .about__work--article p {
@@ -554,6 +558,17 @@ body {
     text-decoration: none;
 }
 
+.about__collaborations--hidden {
+    font-size: 0;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
 @media (min-width: 1px) and (max-width: 767px) {
     .about__collaborations--wrapper {
         display: block;
@@ -716,7 +731,7 @@ body {
     width: 70%;
     height: auto;
     overflow: hidden;
-    margin: 6rem auto 0 auto;
+    margin: 5rem auto 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -743,6 +758,7 @@ textarea {
     border: none;
     margin: 2rem 0 2rem 0;
     resize: none;
+    padding-top: 0.8rem;
 }
 
 input[type=text],
@@ -759,10 +775,6 @@ input[type=email]:focus,
 textarea:focus {
     outline: none;
     border: 3px solid #eb820d;
-}
-
-textarea {
-    padding-top: 1rem;
 }
 
 .contact__submit-btn {
@@ -789,6 +801,15 @@ textarea {
 .contact iframe {
     width: 100%;
     height: 35rem;
+}
+
+.visually-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    word-wrap: normal;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-        crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/logo-letter.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="icon" href="img/logo-x-icon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Flat design Website</title>
 </head>
@@ -21,9 +21,9 @@
 
     <nav class="nav" id="nav">
         <div class="nav__wrapper">
-            <a href="#header" class="nav__wrapper--logo scroll__link"><img src="img/logo-letter.png" alt="logo letter, C letter">orp<span
+            <a href="#header" class="nav__wrapper--logo scroll__link"><img src="img/logo-letter.png" alt="C">orp<span
                     style="color:#b64b4b;">Logo</span></a>
-            <a class="nav__wrapper--hamburger">&#9776;</a>
+            <button aria-label="open menu" class="nav__wrapper--hamburger">&#9776;</button>
             <ul class="nav__wrapper--list" id="nav__wrapper--list">
                 <li><a href="#about" class="scroll__link--header nav__active">About</a></li>
                 <li><a href="#portfolio" class="scroll__link nav__active">Portfolio</a></li>
@@ -37,22 +37,22 @@
         <h2>About Us</h2>
         <div class="about__wrapper">
             <div class="about__wrapper--element">
-                <img src="img/rocket.svg" alt="rocket">
+                <img src="img/rocket.svg" alt="">
                 <h3>Lorem Ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur praseinti adipiscing elit.</p>
             </div>
             <div class="about__wrapper--element">
-                <img src="img/pen.svg" alt="pen">
+                <img src="img/pen.svg" alt="">
                 <h3>Lorem Ipsum</h3>
                 <p>Praesent lato justo ligula, interdu ut lobortis quis dolor amet.</p>
             </div>
             <div class="about__wrapper--element">
-                <img src="img/smartphone.svg" alt="smartphone">
+                <img src="img/smartphone.svg" alt="">
                 <h3>Lorem Ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur praseinti adipiscing elit.</p>
             </div>
             <div class="about__wrapper--element">
-                <img src="img/message.svg" alt="balloon">
+                <img src="img/message.svg" alt="">
                 <h3>Lorem Ipsum</h3>
                 <p>Praesent lato justo ligula, interdu ut lobortis quis dolor amet.</p>
             </div>
@@ -62,22 +62,25 @@
     <section class="about__work">
         <h2>How We Work</h2>
 
-        <img src="img/devices.svg" alt="devices with different resolutions - monitor, tablet and smartphone">
+        <img src="img/devices.svg" alt="">
 
-        <article class="about__work--article">
-            <h3>LOREM IPSUM</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur praseinti adipiscing elit. Praesent lato justo ligula,
-                interduut
-                lobortis quis dolor amet. Integer hendrerit urna tincidunt, hendrerit augue.
-            </p>
-
-            <h3>DOLOR SIT</h3>
+        <div class="about__work--article">
+            <section>
+                <h3>Lorem ipsum</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur praseinti adipiscing elit. Praesent lato justo ligula,
+                    interduut
+                    lobortis quis dolor amet. Integer hendrerit urna tincidunt, hendrerit augue.
+                </p>
+            </section>
+            <section></section>
+            <h3>Dolor sit</h3>
             <p>
                 Praesent lato justo ligula, interdu ut lobortis quis dolor amet. Integer hendrerit urna tincidunt,
                 hendrerit augue at, auctor mi. Sed tempor lectus id ultricies lobortis.
             </p>
-        </article>
+    </section>
+    </div>
     </section>
 
     <section class="testimonials">
@@ -109,7 +112,8 @@
     <section class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
         <div class="portfolio__wrapper">
-            <div class="portfolio__wrapper--item"><img src="img/hardware.png" alt="tree devices, smartphone, monitor, tablet"></div>
+            <div class="portfolio__wrapper--item"><img src="img/hardware.png"
+                    alt="tree devices, smartphone, monitor, tablet"></div>
             <div class="portfolio__wrapper--item"><img src="img/desk.png" alt="desk"></div>
             <div class="portfolio__wrapper--item"><img src="img/pencil.png" alt="pencil"></div>
             <div class="portfolio__wrapper--item"><img src="img/brush.png" alt="brush"></div>
@@ -121,6 +125,7 @@
     </section>
 
     <section class="about__collaborations">
+        <h2 class="about__collaborations--hidden">This heading text is hidden.</h2>
         <ul class="about__collaborations--wrapper">
             <li><i class="fab fa-telegram-plane"> <a href="#">loremipsum.com </a> </i></li>
             <li><i class="fab fa-blogger"> <a href="#">loremipsum.com</a></i></li>
@@ -202,24 +207,28 @@
         <form class="form">
             <div class="form__field--input">
                 <label>
-                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <p class="visually-hidden">Your Name<p>
+                            <input type="text" name="name" placeholder="Enter Your Name" required>
                 </label>
             </div>
             <div class="form__field--input">
                 <label>
-                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <p class="visually-hidden">Your email address<p>
+                            <input type="email" name="email" placeholder="Enter Your Email" required>
                 </label>
             </div>
             <div class="form__field--textarea ">
                 <label>
-                    <textarea placeholder="Type your message..." name="message"></textarea>
+                    <p class="visually-hidden">Your message<p>
+                            <textarea placeholder="Type your message..." name="message"></textarea>
                 </label>
             </div>
             <input type="submit" value="Submit" class="contact__submit-btn">
         </form>
 
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96869.50107040301!2d-111.57000177551329!3d40.6481407915975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87520f632c6303fd%3A0xd871c4df25375794!2sPark+City%2C+Utah%2C+Stany+Zjednoczone!5e0!3m2!1spl!2spl!4v1548265101800"
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96869.50107040301!2d-111.57000177551329!3d40.6481407915975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87520f632c6303fd%3A0xd871c4df25375794!2sPark+City%2C+Utah%2C+Stany+Zjednoczone!5e0!3m2!1spl!2spl!4v1548265101800"
             frameborder="0" allowfullscreen></iframe>
     </section>
 
