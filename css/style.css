@@ -56,12 +56,14 @@ body {
     font-size: 2.5rem;
     text-transform: uppercase;
     border-radius: 0.5rem;
+    -webkit-box-shadow: .2rem .4rem .2rem #892e2b;
     box-shadow: .2rem .4rem .2rem #892e2b;
 }
 
 .header a:hover {
     color: #b64b4b;
     background-color: #65b1be;
+    -webkit-box-shadow: .2rem .4rem .2rem #477b6a;
     box-shadow: .2rem .4rem .2rem #477b6a;
 }
 
@@ -74,6 +76,7 @@ body {
     width: 100%;
     min-height: 8rem;
     background-color: #ffffff;
+    -webkit-box-shadow: -0.5rem 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
     box-shadow: -0.5rem 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
@@ -198,10 +201,12 @@ body {
     overflow: hidden;
     margin: 0 auto;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 6rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
-}
 
 .about__wrapper--element {
     text-align: center;
@@ -266,6 +271,7 @@ body {
     margin-left: 20%;
     margin-right: 5rem;
     float: left;
+    -webkit-filter: drop-shadow(-2rem 2rem 0.2rem rgba(0, 0, 0, 0.5));
     filter: drop-shadow(-2rem 2rem 0.2rem rgba(0, 0, 0, 0.5));
 }
 
@@ -303,6 +309,7 @@ body {
         margin: 0 auto;
         margin-top: 2rem;
         float: none;
+        -webkit-filter: none;
         -webkit-filter: none;
         filter: none;
     }
@@ -424,6 +431,8 @@ body {
     max-height: 100%;
     margin: 0 auto;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -432,6 +441,7 @@ body {
 }
 
 .portfolio__wrapper--item:nth-child(2) {
+    -ms-grid-column-span: 2;
     grid-column: 2 / 4;
     grid-row: 1;
     -ms-grid-column: 2 / 4;
@@ -441,6 +451,7 @@ body {
 
 .portfolio__wrapper--item:nth-child(3) {
     grid-column: 4;
+    -ms-grid-row-span: 2;
     grid-row: 1 / 3;
     -ms-grid-column: 4;
     -ms-grid-row: 1 / 3;
@@ -450,6 +461,7 @@ body {
 
 .portfolio__wrapper--item:nth-child(4) {
     grid-column: 1;
+    -ms-grid-row-span: 2;
     grid-row: 2 / 4;
     -ms-grid-column: 1;
     -ms-grid-row: 2 / 4;
@@ -469,7 +481,9 @@ body {
 }
 
 .portfolio__wrapper--item:nth-child(8) {
+    -ms-grid-column-span: 2;
     grid-column: 3 / 5;
+    -ms-grid-row-span: 1;
     grid-row: 3 / 4;
     -ms-grid-column: 3 / 5;
     -ms-grid-row: 3 / 4;
@@ -573,6 +587,8 @@ body {
     padding: 0;
     margin: 0 auto;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     list-style: none;
 }
@@ -630,6 +646,8 @@ body {
     width: 60%;
     height: auto;
     overflow: hidden;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -657,6 +675,7 @@ body {
 @media (min-width: 460px) and (max-width: 850px) {
     .services__wrapper {
         width: 80%;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
 
@@ -683,7 +702,9 @@ body {
     overflow: hidden;
     margin: 7rem auto 0 auto;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -713,6 +734,15 @@ body {
 .p50 {
     background-color: rgba(64, 76, 98, 0.4);
     background-image:
+        -webkit-gradient(linear, right top, left top, color-stop(50%, transparent), color-stop(50%, #404c62)),
+        -webkit-gradient(linear, left top, right top, color-stop(50%, #404c62), color-stop(50%, transparent));
+    background-image:
+        -webkit-linear-gradient(right, transparent 50%, #404c62 50%),
+        -webkit-linear-gradient(left, #404c62 50%, transparent 50%);
+    background-image:
+        -o-linear-gradient(right, transparent 50%, #404c62 50%),
+        -o-linear-gradient(left, #404c62 50%, transparent 50%);
+    background-image:
         linear-gradient(270deg, transparent 50%, #404c62 50%),
         linear-gradient(90deg, #404c62 50%, transparent 50%);
     color: #404c62;
@@ -721,6 +751,15 @@ body {
 .p75 {
     background-color: rgba(222, 183, 55, 0.4); 
     background-image:
+        -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #deb737)),
+        -webkit-gradient(linear, left top, left bottom, color-stop(50%, #deb737), color-stop(50%, transparent)); 
+    background-image:
+        -webkit-linear-gradient(left, transparent 50%, #deb737 50%),
+        -webkit-linear-gradient(top, #deb737 50%, transparent 50%); 
+    background-image:
+        -o-linear-gradient(left, transparent 50%, #deb737 50%),
+        -o-linear-gradient(top, #deb737 50%, transparent 50%); 
+    background-image:
         linear-gradient(90deg, transparent 50%, #deb737 50%),
         linear-gradient(180deg, #deb737 50%, transparent 50%);
     color: #deb737;
@@ -728,6 +767,15 @@ body {
 
 .p100 {
     background-color: rgba(183, 75, 75, 0.4);
+    background-image:
+        -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(50%, #b74b4b)),
+        -webkit-gradient(linear, left bottom, left top, color-stop(50%, #b74b4b), color-stop(0%, transparent));
+    background-image:
+        -webkit-linear-gradient(bottom, transparent 0%, #b74b4b 50%),
+        -webkit-linear-gradient(bottom, #b74b4b 50%, transparent 0%);
+    background-image:
+        -o-linear-gradient(bottom, transparent 0%, #b74b4b 50%),
+        -o-linear-gradient(bottom, #b74b4b 50%, transparent 0%);
     background-image:
         linear-gradient(0deg, transparent 0%, #b74b4b 50%),
         linear-gradient(360deg, #b74b4b 50%, transparent 0%);
@@ -765,7 +813,10 @@ body {
     overflow: hidden;
     margin: 5rem auto 0 auto;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -817,6 +868,7 @@ textarea:focus {
     border-radius: 0.6rem;
     cursor: pointer;
     margin-bottom: 7rem;
+    -webkit-box-shadow: 0 0.3rem #5b212a;
     box-shadow: 0 0.3rem #5b212a;
     color: #ffffff;
     font-weight: bold;
@@ -872,6 +924,8 @@ textarea:focus {
     padding: 0;
     margin: 3.6rem auto 5rem auto;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
