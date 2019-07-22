@@ -5,6 +5,8 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Status](#status)
+* [Contact](#contact)
 
 ## General info
 This project is a simple page in a flat, minimalist design.
