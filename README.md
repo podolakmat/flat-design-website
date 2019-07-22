@@ -35,4 +35,4 @@ Currently being improved:
 * js - intersectionObserver
 
 ## Contact
-Created by [Mateusz Podolak](podolakmateusz@outlook.com) - feel free to contact me!
+Created by [Mateusz Podolak](https://www.linkedin.com/in/mateusz-podolak) - feel free to contact me!
